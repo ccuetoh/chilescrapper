@@ -1,7 +1,7 @@
 # ChileScrapper
 
 [![Pip](https://img.shields.io/pypi/v/chilescrapper)](https://pypi.org/project/chilescrapper)
-[![Licence](https://img.shields.io/pypi/l/chilescrapper)](https://github.com/CamiloHernandez/chilesiente/blob/master/LICENSE)
+[![Licence](https://img.shields.io/pypi/l/chilescrapper)](https://github.com/CamiloHernandez/chilescrapper/blob/master/LICENSE)
 
 A compact scraping library for the major newspapers of Chile
 
