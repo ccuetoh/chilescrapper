@@ -1,8 +1,9 @@
 import datetime
-
 import urllib.request
-import dateutil.parser
+from urllib.error import URLError
+
 import bs4
+import dateutil.parser
 
 from chilescrapper.article import Article
 
@@ -217,7 +218,11 @@ class Source:
             }
         )
 
-        html = urllib.request.urlopen(req).read()
+        try:
+            html = urllib.request.urlopen(req).read()
+        except URLError:
+            return None
+
         soup = bs4.BeautifulSoup(html, "html.parser")
 
         return self.home_f(soup, self.url)
